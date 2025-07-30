@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@theme {
+  --color-accent: #000000;
+  --font-accent:"Montserrat", sans-serif;
+  --rounded-nav:1.2rem;
+}
+/* 
+.booking .booking-main{
+  background-image: url('../src/images/uber-6.png') no-repeat;
+  width: calc(100% - 384px);
+  background-position: 100%,100%;
+  height: auto;
+} */
+
+

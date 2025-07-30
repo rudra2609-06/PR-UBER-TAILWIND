@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log-in</title>
+	<link href="./output.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="font-accent h-screen overflow-hidden">
+
+	<!-- header section start  -->
+	<header class="bg-accent py-4 text-[#F8F5F8]">
+		<div class="max-w-[1320px] mx-auto px-4">
+			<h1 class="text-2xl">Uber</h1>
+		</div>
+	</header>
+	<!-- header section ends  -->
+
+	<!-- main section starts  -->
+	 <main>
+		<section class="log-in overflow-hidden">
+			<div class="max-w-[1320px] mx-auto px-4">
+				<div class="flex min-h-screen items-center justify-center">
+					<div class="max-w-[360px] w-full bg-white flex flex-col">
+						<p class="text-2xl font-normal">What's your phone number or <br> email?</p>
+
+						<div class="email-input-field bg-[#eee] pt-[10px] pb-[10px] pl-[12px] border-2 border-transparent focus-within:border-black rounded-[8px] mt-2 mb-6">
+							<input type="email" placeholder="Enter phone number or email" class="w-full pl-1 outline-none">
+						</div>
+
+						<button class="py-[14px] px-[16px] mb-2.5 rounded-[8px] bg-accent text-white hover:bg-[#282828] cursor-pointer  transition-colors">Continue</button>
+						<div class="flex justify-center flex-col p-1">
+
+							<p class="relative flex justify-center-center text-[#AFAFAF] text-sm w-full before:content-[''] before:block before:flex-1 before:h-[1px] before:bg-[#AFAFAF] before:mr-3 after:content-[''] after:block after:flex-1 after:h-[1px] after:bg-[#AFAFAF] after:ml-3"><span class="text-[16px]">or</span></p>
+
+							<div class="flex flex-col items-center justify-center">
+								<button
+								class="w-full flex items-center justify-center gap-2 py-3 px-4 mt-2.5 rounded-lg
+										bg-gray-200 text-gray-800 text-base font-medium
+										hover:bg-gray-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 cursor-pointer"
+								type="button"
+								>
+								<svg width="18" height="18" viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg" class="cz d0" preserveAspectRatio="xMidYMid"><path d="M255.9 133.5c0-10.8-.9-18.6-2.8-26.7H130.6v48.4h71.9a63.8 63.8 0 01-26.7 42.4l-.2 1.6 38.7 30 2.7.3c24.7-22.8 38.9-56.3 38.9-96" fill="#4285F4"></path><path d="M130.6 261.1c35.2 0 64.8-11.6 86.4-31.6l-41.2-32c-11 7.8-25.8 13.1-45.2 13.1a78.6 78.6 0 01-74.3-54.2l-1.5.1-40.3 31.2-.6 1.5C35.4 231.8 79.5 261 130.6 261" fill="#34A853"></path><path d="M56.3 156.4a80.4 80.4 0 01-.2-51.7V103L15.3 71.3l-1.4.6a130.7 130.7 0 000 117.3l42.4-32.8" fill="#FBBC05"></path><path d="M130.6 50.5c24.5 0 41 10.6 50.4 19.4L218 34C195.2 13 165.8 0 130.6 0 79.5 0 35.4 29.3 13.9 72l42.2 32.7a79 79 0 0174.4-54.2" fill="#EB4335"></path></svg>
+
+								<span>Continue with Google</span>
+								</button>
+								<button
+								class="w-full flex items-center justify-center gap-2 py-3 px-4 mt-2.5 rounded-lg
+										bg-gray-200 text-gray-800 text-base font-medium
+										hover:bg-gray-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 cursor-pointer"
+								type="button"
+								>
+								<svg
+									class="w-5 h-5"
+									viewBox="0 0 22 22"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
+								>
+									<g transform="matrix(1 0 0 1 3 1)">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M11.2676 3.23104C11.9166 2.39314 12.4087 1.20886 12.2307 0C11.1698 0.0737252 9.92984 0.752465 9.2063 1.63717C8.54675 2.43878 8.00468 3.63126 8.21639 4.78863C9.37613 4.8249 10.5731 4.12978 11.2676 3.23104ZM17 14.6022C16.5359 15.6367 16.3125 16.099 15.7146 17.0153C14.8806 18.2943 13.7046 19.887 12.2459 19.8987C10.9512 19.9128 10.6173 19.0503 8.85967 19.0608C7.10203 19.0702 6.73561 19.9151 5.4386 19.9022C3.98106 19.8894 2.86668 18.4523 2.03264 17.1732C-0.300809 13.5993 -0.546251 9.404 0.892672 7.17235C1.91632 5.58785 3.53089 4.66101 5.04775 4.66101C6.59136 4.66101 7.56267 5.51295 8.84106 5.51295C10.0811 5.51295 10.836 4.65867 12.6216 4.65867C13.9733 4.65867 15.4052 5.39944 16.4242 6.67734C13.0834 8.5193 13.6243 13.3185 17 14.6022Z"
+									></path>
+									</g>
+								</svg>
+
+								<span>Continue with Apple</span>
+								</button>
+							</div>
+						</div>
+						<p class="text-[12px]/[20px] text-[#6B6B6B] font-light mt-10 ml-2">By proceeding, you consent to get calls, WhatsApp or <br> SMS/RCS messages, including by automated means, <br> from Uber and its affiliates to the number provided.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	 </main>
+	 <!-- main section ends  -->
+
+</body>
+
+</html>

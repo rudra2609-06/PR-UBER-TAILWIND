@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ride</title>
+	<link href="./output.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="font-accent">
+	
+	<!-- header section starts  -->
+	<header class=" bg-[#ffffff] border border-b-4 border-[#f3f3f3] text-black">
+		<div class="mx-auto max-w-[1320px] px-4">
+			<div class="flex justify-between">
+				<div class="navbar-left flex items-center">
+					<h1>
+						<a href="javascript:void(0)" class="text-3xl font-medium mr-[82px]">
+							<span>Uber</span>
+						</a>
+					</h1>
+
+					<nav>
+						<ul class="flex items-center gap-2">
+							<li>
+								<a href="javascript:void(0)" class="inline-flex items-center gap-1.5 mb-[-4px] pt-[14px] pr-[16px] pl-[16px]  border-b-4 border-b-black h-[60px]">
+									<span>
+										<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><title>Car front</title><path d="m20.9 9-1.5-4.6c-.3-.8-1-1.4-1.9-1.4H6.4c-.9 0-1.6.5-1.9 1.4L3 9H1v3h1v9h4v-2h12v2h4v-9h1V9h-2.1ZM5 14h4v2H5v-2Zm10 2v-2h4v2h-4ZM7.1 6h9.7l1.3 4H5.8l1.3-4Z" fill="currentColor"></path></svg>
+									</span>
+									<span class="text-sm">Ride</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="inline-flex items-center gap-1.5 mb-[-4px] pt-[14px] pr-[16px] pl-[16px]  border-b-4 border-b-transparent focus:border-b-black transition-all duration-150 h-[60px]">
+									<span>
+										<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><title>Car clock</title><path d="M18 0c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6Zm3 7h-4V2h2v3h2v2Z" fill="currentColor"></path>,<path d="M18.2 14H18c-3.7 0-6.9-2.6-7.8-6H6.4c-.9 0-1.6.5-1.9 1.3L2.8 14H1v3h1v6h4v-1h9v1h4v-6h1v-3h-1.8ZM8 19H4v-2h4v2Zm9 0h-4v-2h4v2Z" fill="currentColor"></path></svg>
+									</span>
+									<span class="text-sm">Rentals</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="navbar-right flex items-center">
+					<nav>
+						<ul class="flex items-center gap-3">
+							<li>
+								<a href="javascript:void(0)">
+									<button class="py-[8px] px-[12px] bg-[#f3f3f3] rounded-[30px] flex items-center hover:bg-[#DDDDDD] transition-colors duration-150 cursor-pointer">
+										<span>
+											<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>Receipt</title><path fill-rule="evenodd" clip-rule="evenodd" d="M3 23V1h18v22l-5.5-3-3.5 3-3.5-3L3 23ZM7 9h10V6H7v3Zm10 3H7v3h10v-3Z" fill="currentColor"></path>
+											</svg>
+										</span>
+										<span class="text-sm mr-[6px] ml-[10px]">
+											Activity
+										</span>
+									</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" 
+									class="block p-2 rounded-full">
+									<img 
+									src="https://d1w2poirtb3as9.cloudfront.net/default.jpeg?Expires=1753577829&Signature=K6Q96iqbKA8nzUG9Z05tJBJDEevcbXwNUYmDtVCK~d0bZTfbpGn3xnqRqhd4WPTv~oU8KUvClQRQxgLnX8Mz5PIEY5CcZBShIewa8t9CoOiV-F6CiHnbIFwOro2YNv6QrwEF~Dy2FkSaTF~OJ-ySPDcQtV8Qznwj0~VxDuNwISUQ5USnn2H65pJ5rgE-eqcCpJy2ijDQXTKiK1od9EDUB~pwXLaH-tG2VdAKWXH2tziIE1LSLCyj1AONpZNR36AXsXxbauvmGpkp1wzPqWOj4S-8748Keat-FX1bMMccUgjL0Utd0tVNdIC1zI77egXW9Y5MqCX578LQtcDy21eSbQ__&Key-Pair-Id=K36LFL06Z5BT10" 
+									alt="User Profile" 
+									class="h-10 w-10 rounded-full object-cover border border-gray-300"
+									>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="css-cGLBlV" data-testid="expand-profile-menu-icon"><title>Chevron down small</title><path d="M18 8v3.8l-6 4.6-6-4.6V8l6 4.6L18 8Z" fill="currentColor"></path></svg>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header section ends  -->
+
+	<main>
+		<section class="get-ride py-5 flex h-screen">
+			<div class="mx-auto max-w-[1320px] px-4">
+				<div class="w-full max-w-sm bg-white p-5 border-2 border-[#f3f3f3] rounded-[12px] flex flex-col gap-3">
+					<h2 class="font-bold text-xl">Get a ride</h2>
+					<div class="pickup-location-field  pt-[10px] pb-[10px] bg-[#f3f3f3] flex items-center pl-2 gap-1 rounded-[10px]">
+						<span>
+							<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" data-testid="pickup-icon" data-movable-handle="true"><title>Radio button selected</title><path fill-rule="evenodd" clip-rule="evenodd" d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11Zm0-8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="currentColor"></path></svg>
+						</span>
+						<input type="text" placeholder="Pickup location" class="pl-1.5">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+
+</html>

@@ -1,0 +1,884 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Uber</title>
+	<link href="./output.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="font-accent">
+
+	<!-- header section starts  -->
+	<header class="py-5 bg-accent text-[#F8F5F8]">
+		<div class="max-w-[1320px] mx-auto px-4">
+			<div class="flex justify-between">
+				<!-- navbar left  -->
+
+				<div class="navbar-left flex">
+					<!-- logo  -->
+
+					<h1 class="text-2xl font-normal me-5">
+						<a href="javascript:void(0)">
+							Uber
+						</a>
+					</h1>
+
+					<!-- navbar  -->
+
+					<nav>
+						<ul class=" m-nav-list flex gap-2">
+							<li class="m-nav-list-item">
+								<a href="javascript:void(0)" class="py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									Ride
+								</a>
+							</li>
+							<li class="m-nav-list-item">
+								<a href="javascript:void(0)" class=" m-nav-list-link py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									Drive
+								</a>
+							</li>
+							<li class="m-nav-list-item">
+									<a href="javascript:void(0)" 
+								 	 class="m-nav-list-link py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									Business
+									</a>
+							</li>
+							<li class="m-nav-list-item group/about relative">
+								<a href="javascript:void(0)" 
+								 	class="m-nav-list-link py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									 	About
+									<i class="fa-solid fa-angle-down ms-2 text-sm font-medium group-focus-within/about:rotate-180"></i>
+								</a>
+
+									<!-- about-dropdown -->
+
+								<div class="absolute hidden group-focus-within/about:block min-w-[170px] bg-white rounded-lg mt-7 z-50 shadow-lg">
+									<ul class="d1-nav-list">
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px]  hover:bg-gray-100 hover:text-accent">About Us</a>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px]  hover:bg-gray-100 hover:text-accent">Our offerings</a>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px]  hover:bg-gray-100 hover:text-accent">How Uber works</a>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px]  hover:bg-gray-100 hover:text-accent">sustainability</a>
+										</li>
+										<li class="d1-nav-item relative group/explore">
+
+											<a href="#" class="flex items-center px-5 py-2 text-[#a0a0a0] text-sm/[20px]  hover:bg-gray-100  rounded-xl hover:text-accent group/icon-hover delay-9000">
+												Explore
+												<i class="fa-solid fa-angle-right ml-auto group-hover/icon-hover:text-accent text-[#939393]"></i>
+											</a>
+											
+											<!-- explore flyout-menu  -->
+
+											 <div class="absolute delay-9000 hidden group-hover/explore:block bg-white min-w-[250px]  top-[0.125rem] left-full ms-1  shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] rounded-lg z-10">
+
+												<ul class="d2-nav-list">
+
+													<!-- sub-menu  -->
+
+													<li class="d2-nav-link group/cities relative">
+														<a href="javascript:void(0)" class="flex items-center-2 pb-2 hover:rounded-lg  text-[#a0a0a0] hover:text-accent text-sm/[20px]  hover:bg-gray-100  px-5 py-3">
+															Cities
+															<i class="fa-solid fa-angle-right ml-auto text-[#939393] group-hover/cities:text-accent"></i>
+														</a>
+														<div class="absolute   hidden group-hover/cities:block top-[0.4rem]  right-0 left-full ms-0.5  min-w-[320px] max-h-[450px] overflow-  text-[#a0a0a0] bg-white rounded-lg z-50 shadow-2xl">
+															<ul class="flex flex-col space-y-0.5 d2-nav-list mt-2">
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent">
+																		Getting around New Delhi
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Mumbai (Suburban)
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Hyderabad
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Haveli
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Banglore
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Kolkata
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Chennai
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Kanayannur
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Ahmadabad City
+																	</a>
+																</li>	
+																<li class="d2-nav-link">
+																	<a href="javascript:void(0)" class="flex pt-2 pb-2 pl-5 hover:bg-gray-100 hover:text-accent" >
+																		Getting around Jaipur
+																	</a>
+																</li>	
+															</ul>
+														</div>
+													</li>
+												</ul>
+											 </div>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px] hover:text-accent
+											 hover:bg-gray-100">Newsroom</a>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px] hover:text-accent
+											 hover:bg-gray-100">Autonomous</a>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/	[20px] hover:text-accent
+											 hover:bg-gray-100">Blog</a>
+										</li>
+										<li class="d1-nav-item">
+											<a href="#" class="block px-5 py-2 text-[#a0a0a0] text-sm/[20px] hover:text-accent
+											 hover:bg-gray-100">Careers</a>
+										</li>
+									</ul>
+								</div>
+
+							</li>
+						</ul>
+					</nav>
+					
+				</div>
+
+				<!-- navbar right -->
+				<div class="navbar-right">
+					<nav>
+						<ul class="flex items-center">
+							<li>
+								<a href="javascript:void(0)" class="py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									<span class="inline-block text-sm/tight mr-1"><i class="fa-solid fa-globe "></i></span>
+									<span class="inline-block text-sm/tight">EN</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									<span class="inline-block text-sm/tight font-normal">Help</span>
+								</a>
+							</li>
+							<li>
+								<a href="log-in.html" class="py-4 px-3 text-sm font-normal hover:bg-[#282828] hover:rounded-full">
+									<span class="inline-block text-sm/tight font-normal">Log in</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="px-3">
+									<button class="text-sm/[20px] cursor-pointer ">
+										<span class="py-2.5 px-4 bg-white rounded-full text-accent hover:bg-[#E2E2E2]">Sign up</span>
+									</button>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header section ends -->
+
+	<!-- main section starts -->
+	<main>
+		<!-- booking section starts  -->
+		<section class="booking pt-[30px] pb-[60px]">
+			<div class="max-w-[1320px] mx-auto px-4">
+				<div class="grid grid-cols-1 lg:grid-cols-2 h-full gap-x-0">
+
+					<div class="location-section lg:p-8 lg:pl-15 flex flex-col gap-6 h-full">
+
+						<h4 class="text-5xl/tight font-bold">Go anywhere with <br> Uber</h4>
+
+						<!-- input fields  -->
+						<div class="inputs-fields flex flex-col gap-6 relative">
+							<!-- pickup location  -->
+							<div
+								class="pickup-location-field py-3.5 ps-9  max-w-sm rounded-[12px] bg-[#F3F3F3] relative flex justify-between items-center">
+								<span
+									class="pickup-field-indicator absolute left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-black rounded-full"></span>
+
+								<input type="text" aria-label="Pickup location" placeholder="Pickup location"
+									class="focus:outline-0 text-[#383434] text-base/tight  border-0 h-full w-full ">
+
+
+								<button>
+									<svg width="3em" height="1em" viewBox="0 0 24 24" fill="none"
+										aria-label="Auto-fill my location"
+										class="pe-location-fetch css-bOZeEP focus:outline-0 border-0" role="button"
+										tabindex="0">
+										<path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="currentColor"></path>
+									</svg>
+								</button>
+
+							</div>
+
+							<!-- drop-off location  -->
+							<div
+								class="dropoff-location-field py-3.5 ps-9  max-w-sm rounded-[12px] bg-[#F3F3F3] relative flex justify-between items-center">
+
+								<span
+									class="dropoff-field-indicator absolute left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-black"></span>
+
+								<input type="text" placeholder="Dropoff location"
+									class=" focus:outline-0 text-[#383434] text-base/tight  border-0 h-full w-full ">
+
+								<!-- dividing line  -->
+								<div
+									class="dividing-line absolute border border-s-black h-[48px] left-[18px] bottom-[41px]">
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- date and time fields  -->
+						<div class="date-time-fields flex gap-2">
+
+							<!-- date field  -->
+							<div class="date-field bg-[#F3F3F3] py-1 px-1 max-w-[192px]  rounded-[8px]">
+								<div class="date-input-field flex items-center">
+									<svg width="3em" height="1em" viewBox="0 0 24 24" fill="none" aria-="true"
+										data-testid="calendar-filled">
+										<title>Calendar</title>
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M23 8V4h-3V1h-3v3H7V1H4v3H1v4h22Zm0 15H1V10h22v13ZM8 14H5v3h3v-3Z"
+											fill="currentColor"></path>
+									</svg>
+									<title>Calendar</title>
+									<input type="text" class="py-2.5  ps-1 focus:outline-0 min-w-0 flex-1"
+										placeholder="Today">
+								</div>
+							</div>
+
+							<!-- time field  -->
+							<div class="time-field bg-[#F3F3F3] py-1 px-1 max-w-[190px]  rounded-[8px]">
+								<div class="time-input-field  flex items-center  w-full px-2">
+									<svg width="2em" height="1em" viewBox="0 0 24 24" fill="none" aria-="true"
+										data-testid="clock-filled">
+										<title>Clock</title>
+										<path
+											d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm6 13h-8V4h3v7h5v3Z"
+											fill="currentColor"></path>
+									</svg>
+									<input type="text" class="py-2.5  ps-2 focus:outline-0 min-w-0 flex-1"
+										placeholder="Now">
+									<span><i class="fa-solid fa-caret-down text-sm"></i></span>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- prices and view-activity options  -->
+						<div class="prices and view-activity-options flex gap-6 items-center">
+							<!-- prices btn  -->
+							<button
+								class="py-3.5 px-6 bg-accent text-[#FFFFF2] rounded-[8px] hover:bg-[#333333] transition-colors">See
+								Prices</button>
+							<!-- activity option  -->
+							<span class="text-[16px] text-[#000000e4] border-b-2 border-b-gray-300 pb-1">Log in to see
+								your recent activity</span>
+						</div>
+					</div>
+
+					<!-- Right img  -->
+
+					<div class="uber-1-img lg:flex justify-center items-center h-full w-full  ">
+						<img src="./images/uber-1.png" alt=""
+							class="max-w-full max-h-[400px] object-contain  rounded-[10px] ">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- booking section ends -->
+
+		<!-- suggestion section starts  -->
+		<section class="suggestion">
+			<div class="max-w-[1320px] mx-auto px-4">
+				<div class="suggestion-content xl:pl-15">
+					<div class="suggstion-heading">
+						<h3 class="text-accent text-[30px] font-bold mb-4">Suggestions</h3>
+						<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-6">
+
+							<!-- ride card  -->
+
+							<div class="ride p-5 pb-3 flex flex-row bg-[#F3F3F3] rounded-[10px] gap-2">
+								<div class="ride-left-side-content flex flex-col gap-2 flex-1">
+									<h3 class="font-medium text-[16px]/[22px]">Ride</h3>
+									<p class="text-[12px]/[18px] mb-6">Go anywhere with Uber.Request a <br>ride,hop in
+										and go.</p>
+									<div class="details-btn inline-flex items-center">
+										<a href="javascript:void(0)"
+											class="py-2.5 px-3.5 bg-white rounded-[50px] hover:bg-[#DDDDDD] transition-colors">
+											<span>Details</span>
+										</a>
+									</div>
+								</div>
+								<div class="ride-right-img flex shrink-0">
+									<img src="./images/suggestion_card_img.png" class="w-[122px] h-[122px]" alt="">
+								</div>
+							</div>
+
+							<!-- reserve card  -->
+
+							<div class="reserve p-5 pb-3 flex flex-row bg-[#F3F3F3] rounded-[10px] gap-2">
+								<div class="reserve-left-side-content flex flex-col gap-2 flex-1">
+									<h3 class="font-medium text-[16px]/[22px]">Reserve</h3>
+									<p class="text-[12px]/[18px] mb-6">Reserve your ride in advance so you <br> can
+										relax on the day of your trip</p>
+									<div class="details-btn inline-flex items-center">
+										<a href="javascript:void(0)"
+											class="py-2.5 px-3.5 bg-white rounded-[50px] hover:bg-[#DDDDDD] transition-colors">
+											<span>Details</span>
+										</a>
+									</div>
+								</div>
+								<div class="reserve-right-img flex shrink-0">
+									<img src="./images/uber-2.png" class="w-[122px] h-[122px]" alt="">
+								</div>
+							</div>
+
+							<!-- Intercity  -->
+
+							<div class="Intercity p-5 pb-3 flex flex-row bg-[#F3F3F3] rounded-[10px] gap-2">
+								<div class="Intercity-left-side-content flex flex-col gap-2 flex-1">
+									<h3 class="font-medium text-[16px]/[22px]">Intercity</h3>
+									<p class="text-[12px]/[18px] mb-2">Get convenie,affordable <br> outstation cabs
+										anytime at your <br>door.</p>
+									<div class="details-btn inline-flex items-center">
+										<a href="javascript:void(0)"
+											class="py-2.5 px-3.5 bg-white rounded-[50px] hover:bg-[#DDDDDD] transition-colors">
+											<span>Details</span>
+										</a>
+									</div>
+								</div>
+								<div class="Intercity-right-img flex shrink-0">
+									<img src="./images/uber-3.png" class="w-[122px] h-[122px]" alt="">
+								</div>
+							</div>
+
+							<!-- rentals card  -->
+
+							<div class="rentals p-5 pb-3 flex flex-row bg-[#F3F3F3] rounded-[10px] gap-2">
+								<div class="rentals-left-side-content flex flex-col gap-2 flex-1">
+									<h3 class="font-medium text-[16px]/[22px]">Rentals</h3>
+									<p class="text-[12px]/[18px] mb-6">Request a trip for a block of time and make
+										multiple stops.</p>
+									<div class="details-btn inline-flex items-center">
+										<a href="javascript:void(0)"
+											class="py-2.5 px-3.5 bg-white rounded-[50px] hover:bg-[#DDDDDD] transition-colors">
+											<span>Details</span>
+										</a>
+									</div>
+								</div>
+								<div class="rentals-right-img flex shrink-0">
+									<img src="./images/uber-4.png" class="w-[122px] h-[122px]" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- suggestion section ends -->
+
+		<!-- log-in  section starts  -->
+		<section class="login py-16">
+			<div class="mx-auto px-4 max-w-[1320px]">
+				<div class="grid grid-cols-2 h-full">
+					<!-- left side content  -->
+					<div class="left-side-content flex flex-col gap-6 pl-15 h-full">
+						<h3 class="text-3xl/[px] font-bold text-accent">Log in to see your recent <br> activity</h3>
+						<p>View past trips, tailored suggestions, support resources,<br> and more.</p>
+						<div class="login-to-your-account-btn flex  mt-2">
+							<a href="javascript:void(0)"
+								class="py-[14px] px-[25px] bg-accent text-white rounded-[8px] hover:bg-[#333333] transition-colors">
+								<span>Log in to your account</span>
+							</a>
+						</div>
+						<div class="sign-up">
+							<p
+								class="text-[16px] text-[#000000e4] border-b-2 border-b-gray-300 pb-1 cursor-pointer inline-block">
+								Don't have an Uber account?Sign up</p>
+						</div>
+					</div>
+					<div class="right-side-content w-full h-full">
+						<img src="./images/uber-5.png" alt="" class="max-w-[558px] max--h-[372px] object-contain">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- log-in section ends -->
+
+		<!-- booking section start -->
+		<section class="booking py-16">
+			<div class="mx-auto px-4 max-w-[1320px]">
+				<div class="booking-title lg:px-13 pl-4 mb-6">
+					<h2 class="text-4xl font-bold">Plan for later</h2>
+				</div>
+				<div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] lg:px-13 px-4 gap-9">
+					<div class="flex booking-division  lg:flex-grow-0">
+						<div class="left-section flex-1">
+							<div
+								class="booking-form w-full bg-[#9dcdd6] p-0 flex items-center justify-between rounded-xl overflow-">
+								<div class="booking-form-content w-1/2 p-8 flex flex-col">
+									<h2 class="text-3xl font-bold mb-8">Get your ride right <br> with Uber Reserve</h2>
+									<h4 class="font-semibold text-md">Choose date and time</h4>
+									<div class="date-time-field flex mt-3 gap-2">
+										<div class="date-field flex flex-col max-w-[170px] relative">
+											<label class="text-[#5E5E5E] text-[14px]">Date</label>
+											<span class="absolute top-[30px] left-3"><i
+													class="fa-solid fa-calendar"></i></span>
+											<input type="text" placeholder="Date"
+												class="py-2.5 pl-[52px] pr-4 bg-[#F3F3F3] rounded-xl w-full outline-none" />
+										</div>
+										<div class="time-field flex flex-col max-w-[170px] relative">
+											<label class="text-[#5E5E5E] text-[14px]">Time</label>
+											<span class="absolute top-[30px] left-3"><i
+													class="fa-solid fa-clock"></i></span>
+											<input type="text" placeholder="Time"
+												class="py-2.5 pl-13 pr-4 bg-[#F3F3F3] rounded-xl w-full outline-none" />
+											<span class="absolute right-[16px] top-[28px]"><i
+													class="fa-solid fa-caret-down text-sm"></i></span>
+										</div>
+									</div>
+									<div class="benefits-btn max-w-[350px] mt-5 ">
+										<button
+											class="w-full py-[14px] px-[25px] bg-accent text-white rounded-[8px] cursor-pointer hover:opacity-90 transition-colors">Next</button>
+									</div>
+								</div>
+								<div class="booking-img flex justify-center items-center w-full max-w-[299px] h-auto">
+									<img src="./images/uber-6.png" alt="Uber Watch"
+										class="w-full h-full object-contain aspect-[299/426]" />
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="booking-benefits border max-h-[360px] w-max rounded-xl border-gray-300">	
+						<div class="booking-benefits-content p-5">
+								<h3 class="text-[20px] font-bold">Benefits</h3>
+								<ul class="p-8 flex flex-col gap-3">
+									<li class="flex gap-4">
+										<span class="text-xl"><i class="fa-solid fa-calendar"></i></span>
+										<p class="border-b border-b-gray-300 pb-4">Choose your exact pickup time up <br> to 90 days in advance.</p>
+									</li>
+									<li class="flex gap-4">
+										<span class="text-xl"><i class="fa-solid fa-clock"></i></span>
+										<p class="border-b border-b-gray-300 pb-4">Extra wait time included to meet <br> your ride.</p>
+									</li>
+									<li class="flex gap-4.5">
+										<span class="text-xl"><i class="fa-solid fa-credit-card"></i></span>
+										<p>Cancel at no charge up to 60 <br> minutes in advance.</p>
+									</li>
+								</ul>
+								<a href="javascript:void(0)">
+									<span class="text-[#4b4b4b] border-b border-b-[#4b4b4b] border-dashed">See terms</span>
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- booking section end -->
+
+		<!-- drive when need start -->
+		<section class="drive-when-need py-16">
+			<div class="mx-auto max-w-[1320px] px-4">
+				<div class="grid grid-cols-[auto_1fr] gap-x-30	 items-center">
+					<div class="drive-when-need-img pl-13">
+						<img src="./images/drive_when_need.png" alt="" class="h-auto w-auto max-w-[552px max-h-[552px] object-cover">
+					</div>
+					<div class="drive-when-need-content">
+						<div class="flex flex-col">
+							<h3 class="text-4xl font-bold">Drive when you want, make <br> what you need</h3>
+							<p class="mt-9">Make money on your schedule with deliveries or rides—or <br> both. You can use your own car or choose a rental <br> through Uber.</p>
+							<div class="drive-when-btns mt-9 flex gap-6 items-center">
+								<button class="py-[12px] px-[25px] bg-accent rounded-[8px] text-white cursor-pointer hover:opacity-90 transition-colors">Get Started</button>
+								<p class="text-[16px] text-[#000000e4] border-b-2 border-b-gray-300 pb-1 cursor-pointer inline-block">Already have an account?Sign in</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- drive when need end -->
+
+		<!-- uber-business section starts  -->
+		<section class="login py-16">
+			<div class="mx-auto px-4 max-w-[1320px]">
+				<div class="grid grid-cols-2  items-center h-full pl-[52px]">
+					<!-- left side content  -->
+					<div class="uber-business-left-section">
+						<div class="flex flex-col gap-8">
+							<h3 class="text-4xl font-bold">The Uber you know, <br> reimagined for business</h3>
+							<p>Uber for Business is a platform for managing global rides and <br> meals, and local deliveries, for companies of any size.</p>
+							<div class="uber-business-btn flex gap-6 items-center">
+								<button class="py-[12px] px-[25px] bg-accent rounded-[8px] text-white cursor-pointer hover:opacity-90 transition-colors">Get Started</button>
+								<p class="text-[16px] text-[#000000e4] border-b-2 border-b-gray-300 pb-1 cursor-pointer inline-block">Check out our solutions</p>
+							</div>
+						</div>
+					</div>
+					<!-- Right side content  -->
+					<div class="right-side-content w-full h-full">
+						<img src="./images/business_with_uber.png" alt="" class="max-w-[558px] max--h-[372px] object-contain">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- uber-business section ends -->
+
+		<!-- renting-car section starts  -->
+		<section class="login py-16">
+			<div class="mx-auto px-4 max-w-[1320px]">
+				<div class="grid grid-cols-2  items-center h-full pl-[52px]">
+					<!-- left side content  -->
+					<div class="renting-car-left-section">
+						<div class="flex flex-col gap-8">
+							<h3 class="text-4xl font-bold">Make money by renting out <br>your car</h3>
+							<p>Connect with thousands of drivers and earn more per week <br> with Uber’s free fleet management tools.</p>
+							<div class="uber-business-btn flex gap-6 items-center">
+								<button class="py-[12px] px-[25px] bg-accent rounded-[8px] text-white cursor-pointer hover:opacity-90 transition-colors">Get Started</button>
+							</div>
+						</div>
+					</div>
+					<!-- Right side content  -->
+					<div class="right-side-content w-full h-full">
+						<img src="./images/rent-your-car.png" alt="" class="max-w-[558px] max--h-[372px] object-contain">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- uber-business section ends -->
+
+
+		<!-- redirect to app starts  -->
+		<section class="redirect-to-app bg-[#F6F6F6] py-16">
+			<div class="mx-auto max-w-[1320px] px-4">
+				<div class="redirect-to-app-title pl-[52px] mb-9">
+					<h2 class="text-4xl font-bold">It's easier in the apps</h2>
+				</div> 
+				<div class="grid grid-cols-2 pl-[52px] ">
+					<div class="download-uber-app bg-white max-w-[95%] cursor-pointer">
+						<div class="flex gap-7 p-4 items-center group">
+							<div class="qr-code">
+								<a href="javascript:void(0)">
+									<img src="./images/uber-app-qr-code.png" alt="" class="max-w-[15opx] max-h-[150px] object-contain">
+								</a>
+							</div>
+							<div class="download-app flex flex-col gap-1 ">
+								<h3 class="text-2xl font-bold">Download the Uber app</h3>
+								<p>Scan to download</p>
+							</div>
+							<div class="move-to-download-icon ml-auto">
+								<a href="javascript:void(0)">
+									<span class="inline-block transition-transform duration-300hidden group-hover:translate-x-2  text-sm"><i class="fa-solid fa-arrow-right"></i></i></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="download-driver-app bg-white max-w-[95%] cursor-pointer">
+						<div class="flex gap-7 p-4 items-center group">
+							<div class="qr-code">
+								<a href="javascript:void(0)">
+									<img src="./images/uber-app-qr-code.png" alt="" class="max-w-[15opx] max-h-[150px] object-contain">
+								</a>
+							</div>
+							<div class="download-app flex flex-col gap-1">
+								<h3 class="text-2xl font-bold">Download the Driver app</h3>
+								<p>Scan to download</p>
+							</div>
+							<div class="move-to-download-icon ml-auto">
+								<a href="javascript:void(0)">
+									<span class="inline-block transition-transform duration-300hidden group-hover:translate-x-2 text-sm"><i class="fa-solid fa-arrow-right"></i></i></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<!-- redirect to app ends -->
+
+	</main>
+	<!-- main section ends  -->
+
+	<!-- footer section starts -->
+	<footer class="py-5 bg-accent text-white">
+		<div class="max-w-[1320px] mx-auto px-4">
+			<div class="footer-top pl-[52px] py-14">
+				<div class="footer-top-content flex flex-col space-y-8 relative cursor-pointer">
+					<h3 class="text-2xl font-light">Uber</h3>
+					<p class="border-b-1 border-transparent hover:border-white w-max pb-8 cursor-pointer font-light">
+					Visit Help Center
+					</p>
+				</div>
+			</div>
+			<div class="footer-mid pl-[52px] pb-8">
+				<div class="footer-mid-content grid grid-cols-4">
+					<div class="list-1">
+						<h3 class="mb-3 font-normal text-[18px]">Company</h3>
+						<ul class="company-list">
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									About us
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Our offerings
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Newsroom
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Investors
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Blog
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Careers	
+								</a>
+							</li>
+						</ul>	
+					</div>
+					<div class="list-2">
+						<h3 class="mb-3 font-normal text-[18px]">Products</h3>
+						<ul class="Products-list">
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Ride
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Drive
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Eat
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Uber for Business
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Uber Freight
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Gift cards	
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Uber Health	
+								</a>
+							</li>
+						</ul>	
+					</div>
+					<div class="list-3">
+						<h3 class="mb-3 font-normal text-[18px]">Global Citizenship	</h3>
+						<ul class="global-citizenship-list">
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Safety
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Sustainability
+								</a>
+							</li>
+						</ul>	
+					</div>
+					<div class="list-4">
+						<h3 class="mb-3 font-normal text-[18px]">Travel</h3>
+						<ul class="Tarvel-list">
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Reserve
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Airports
+								</a>
+							</li>
+							<li class="pb-3">
+								<a href="javascript:void(0)" class="text-sm/tight text-[#dcdada] hover:text-[#afafaf]">
+									Cities
+								</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom pl-[52px] pt-4">
+				<div class="footer-bottom-row-1">
+					<div class="flex-wrapper flex items-center justify-between">
+						<div class="icons">
+							<ul class="flex gap-14">
+								<li>
+									<a href="javascript:void(0)" class="py-3 px-4 hover:bg-[#282828] transition duration-300 rounded-lg">
+										<i class="fa-brands fa-square-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="py-3 px-4 hover:bg-[#282828] transition duration-300 rounded-lg">
+										<i class="fa-brands fa-x-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="py-3 px-4 hover:bg-[#282828] transition duration-300 rounded-lg">
+										<i class="fa-brands fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="py-3 px-4 hover:bg-[#282828] transition duration-300 rounded-lg">
+										<i class="fa-brands fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="py-3 px-4 hover:bg-[#282828] transition duration-300 rounded-lg">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="language-location flex items-center gap-3">
+							<a href="javascript:void(0)" class="py-2.5 px-3 hover:bg-[#282828] transition duration-300 rounded-lg">
+								<span class="inline-block me-2"><i class="fa-solid fa-globe"></i></span>
+								<span class="inline-block text-sm">English</span>
+							</a>
+							<a href="javascript:void(0)" class="py-2.5 px-3 hover:bg-[#282828] transition duration-300 rounded-lg">
+								<span class="inline-block me-2"><i class="fa-solid fa-location-dot"></i></span>
+								<span class="inline-block text-sm">Surat</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom-row-2 py-14 px-2 flex items-center">
+					<a href="javascript:void(0)">
+						<img src="./images/app-store-google-4d63c31a3e.svg" alt="" class="max-w-[128px] max-h-[38px] shrink-0 w-[128px] h-[38px]">
+					</a>
+					<a href="javascript:void(0)">
+						<img src="./images/app-store-apple-f1f919205b.svg" alt="" class="max-w-[128px] max-h-[38px] shrink-0 w-[128px] h-[38px]">
+					</a>
+				</div>
+				<div class="footer-bottom-row-3">
+					<div class="flex items-center justify-between text-[#AFAFAF] text-[12px]">
+						<div class="footer-bottom-row-3-content-left ">
+							<p>
+								<span>© </span>
+								2025 Uber Technologies Inc.
+							</p>
+						</div>
+						<div class="footer-bottom-row-3-content-right flex gap-x-6">
+							<a href="javascript:void(0)" class="hover:text-white">
+								Privacy
+							</a>
+							<a href="javascript:void(0)" class="hover:text-white">
+								Accesibility
+							</a>
+							<a href="javascript:void(0)" class="hover:text-white">
+								Terms
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- footer section ends -->
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+
+	<!-- calendar field  -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const calendarEl = document.getElementById('calendar');
+			const calendarWrapper = document.getElementById('calendarWrapper');
+			const toggleBtn = document.getElementById('toggleCalendarBtn');
+
+			// Initialize FullCalendar
+			const calendar = new FullCalendar.Calendar(calendarEl, {
+				initialView: 'dayGridMonth',
+				selectable: true,
+				events: [
+					{ title: 'Event 1', date: '2025-06-25' },
+					{ title: 'Event 2', date: '2025-06-28' }
+				]
+			});
+
+			calendar.render();
+
+			// Toggle calendar visibility
+			toggleBtn.addEventListener('click', function () {
+				calendarWrapper.classList.toggle('');
+			});
+
+			// Optional: Close calendar if clicked outside
+			document.addEventListener('click', function (e) {
+				if (!calendarWrapper.contains(e.target) && !toggleBtn.contains(e.target)) {
+					calendarWrapper.classList.add('');
+				}
+			});
+		});
+	</script>
+
+</body>
+
+</html>
